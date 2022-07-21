@@ -1,4 +1,4 @@
-## Prolog Interpreter Lab
+## Tree Walk Interpreter of a Subset of Prolog
 
 To execute:
 
@@ -12,5 +12,7 @@ It's better to use `rlwrap` to get persistent history and completion:
 rlwrap dune exec prolog examples/list.pl
 ```
 
-Our subset of Prolog is described by [this grammar](diagram.xhtml)
+To get more answers type `;` and `enter`. If you don't want another answer type `enter`.
+
+Our subset of Prolog is described by ![this grammar](diagram.xhtml)
 
