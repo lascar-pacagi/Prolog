@@ -47,3 +47,4 @@ Comment  ::= '/*' ( [^*] | '*'+ [^*/] )* '*'* '*/' | '%' [^\n]* '\n'
 ```
 
 
+![Prolog Interpreter](prolog.png)
