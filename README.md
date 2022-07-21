@@ -17,15 +17,15 @@ To get more answers type `;` and `enter`. If you don't want another answer type 
 Our subset of Prolog is described by the following grammar :
 
 ```ebnf
-Program  ::= ( Clause )+ 'eof'
+Program   ::= ( Clause )+ 'eof'
 
-Query    ::= Predicate ( ',' Predicate )* '.' 'eof'
+Query     ::= Predicate ( ',' Predicate )* '.' 'eof'
 
-Clause   ::= UserPredicate ( ':-' Predicate ( ',' Predicate )* )? '.'
+Clause    ::= UserPredicate ( ':-' Predicate ( ',' Predicate )* )? '.'
 
 Predicate ::= UserPredicate | BuiltinPredicate
 
-UserPredicate ::= Name '(' Term ( ',' Term )* ')'
+UserPredicate    ::= Name '(' Term ( ',' Term )* ')'
 
 BuiltinPredicate ::= ( '<=' | '>=' | '=' | '==' | '=:=' | '\=' | '\==' | '=\=' | 'is' ) '(' Term ',' Term ')'
                    | ( 'var' | 'not_var' | 'integer' | 'not_integer' ) '(' Term ')'
@@ -37,7 +37,7 @@ Term ::= Int | Variable | ( '+' | '-' | '*' | '/' ) '(' Term ',' Term ')'
 
 List ::= '[' ( Term ( ',' Term )* ( '|' ( List | Variable ) )? )? ']'
 
-Int ::= [0-9]+
+Int  ::= [0-9]+
 
 Name ::= [a-z][a-zA-Z0-9_]*
 
